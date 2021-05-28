@@ -23,6 +23,8 @@
 		E38053002660E7D80093EDA8 /* PostsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38052FE2660E7D80093EDA8 /* PostsEndpoint.swift */; };
 		E38053022660E8AF0093EDA8 /* PostsWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38053012660E8AF0093EDA8 /* PostsWebService.swift */; };
 		E38053032660E8AF0093EDA8 /* PostsWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38053012660E8AF0093EDA8 /* PostsWebService.swift */; };
+		E380530D2660EB040093EDA8 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E380530C2660EB040093EDA8 /* Post.swift */; };
+		E380530E2660EB040093EDA8 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E380530C2660EB040093EDA8 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,7 @@
 		E38052F92660E6CC0093EDA8 /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
 		E38052FE2660E7D80093EDA8 /* PostsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsEndpoint.swift; sourceTree = "<group>"; };
 		E38053012660E8AF0093EDA8 /* PostsWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsWebService.swift; sourceTree = "<group>"; };
+		E380530C2660EB040093EDA8 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,8 +143,9 @@
 		E38052EB2660E25D0093EDA8 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				E38052F32660E3870093EDA8 /* Networkings */,
 				E38052F42660E3C70093EDA8 /* Delegates */,
+				E380530B2660EAEA0093EDA8 /* Models */,
+				E38052F32660E3870093EDA8 /* Networkings */,
 				E38052F52660E3D50093EDA8 /* ViewControllers */,
 			);
 			path = Source;
@@ -246,6 +250,14 @@
 				E38053012660E8AF0093EDA8 /* PostsWebService.swift */,
 			);
 			path = PostsWebService;
+			sourceTree = "<group>";
+		};
+		E380530B2660EAEA0093EDA8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E380530C2660EB040093EDA8 /* Post.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -385,6 +397,7 @@
 				E38052F72660E3ED0093EDA8 /* NetworkService.swift in Sources */,
 				E38053022660E8AF0093EDA8 /* PostsWebService.swift in Sources */,
 				E38052BE2660E21D0093EDA8 /* SceneDelegate.swift in Sources */,
+				E380530D2660EB040093EDA8 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +408,7 @@
 				E38053002660E7D80093EDA8 /* PostsEndpoint.swift in Sources */,
 				E38052FB2660E6CC0093EDA8 /* NetworkLogger.swift in Sources */,
 				E38052F82660E3F00093EDA8 /* NetworkService.swift in Sources */,
+				E380530E2660EB040093EDA8 /* Post.swift in Sources */,
 				E38053032660E8AF0093EDA8 /* PostsWebService.swift in Sources */,
 				E38052D32660E2200093EDA8 /* BlogsTests.swift in Sources */,
 			);

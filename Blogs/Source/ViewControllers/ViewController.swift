@@ -13,14 +13,9 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
     let postsWebService = PostsWebService()
-    postsWebService.getPosts { data, err in
-      guard let responseData = data else { return }
-      do {
-        let jsonObject = try JSONSerialization.jsonObject(with: responseData, options: .mutableContainers)
-        print(jsonObject)
-      } catch {
-        // Can not parse JSON
-      }
+    postsWebService.getPosts { posts, err in
+      guard let `posts` = posts else { return }
+      print(posts)
     }
   }
   

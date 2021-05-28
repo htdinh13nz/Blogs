@@ -13,7 +13,7 @@ struct PostsWebService {
     self.networkService = networkService
   }
   
-  func getPosts(_ completion: @escaping (_ getPostsResponse: Data?, _ error: String?) ->()) {
+  func getPosts(_ completion: @escaping (_ getPostsResponse: [Post]?, _ error: String?) ->()) {
     networkService.request(.getPosts) { data, res, err in
       if err != nil {
         completion(nil, NetworkResponse.networkError.rawValue)
@@ -23,7 +23,8 @@ struct PostsWebService {
       let result = self.handlePostsResponse(response)
       switch result {
       case .success:
-        completion(data, nil)
+        let parseResult = self.parsePostsResponse(data)
+        completion(parseResult.0, parseResult.1)
       case .failure(let networkFailureError):
         completion(nil, networkFailureError)
       }
@@ -38,6 +39,18 @@ struct PostsWebService {
     case 500...599: return .failure(NetworkResponse.badRequest.rawValue)
     case 600: return .failure(NetworkResponse.outOfDated.rawValue)
     default: return .failure(NetworkResponse.networkFailed.rawValue)
+    }
+  }
+  
+  func parsePostsResponse(_ data: Data?) -> ([Post]?, String?) {
+    guard let responseData = data else { return (nil,  NetworkResponse.emptyResponse.rawValue) }
+    do {
+      let _ = try JSONSerialization.jsonObject(with: responseData, options: .mutableContainers)
+      let apiResponse = try JSONDecoder().decode([Post].self, from: responseData)
+      return (apiResponse, nil)
+    } catch {
+      print(error)
+      return (nil, NetworkResponse.unableDecode.rawValue)
     }
   }
   
