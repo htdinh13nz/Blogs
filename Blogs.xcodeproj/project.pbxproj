@@ -13,8 +13,6 @@
 		E38052C32660E21D0093EDA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E38052C12660E21D0093EDA8 /* Main.storyboard */; };
 		E38052C52660E2200093EDA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E38052C42660E2200093EDA8 /* Assets.xcassets */; };
 		E38052C82660E2200093EDA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E38052C62660E2200093EDA8 /* LaunchScreen.storyboard */; };
-		E38052D32660E2200093EDA8 /* BlogsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38052D22660E2200093EDA8 /* BlogsTests.swift */; };
-		E38052DE2660E2210093EDA8 /* BlogsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38052DD2660E2210093EDA8 /* BlogsUITests.swift */; };
 		E38052F72660E3ED0093EDA8 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38052F62660E3ED0093EDA8 /* NetworkService.swift */; };
 		E38052F82660E3F00093EDA8 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38052F62660E3ED0093EDA8 /* NetworkService.swift */; };
 		E38052FA2660E6CC0093EDA8 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38052F92660E6CC0093EDA8 /* NetworkLogger.swift */; };
@@ -31,17 +29,16 @@
 		E38053182660ECB60093EDA8 /* UserEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38053162660ECB60093EDA8 /* UserEndpoint.swift */; };
 		E380531A2660ECC40093EDA8 /* UserWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38053192660ECC40093EDA8 /* UserWebService.swift */; };
 		E380531B2660ECC40093EDA8 /* UserWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38053192660ECC40093EDA8 /* UserWebService.swift */; };
+		E380531F2660EE910093EDA8 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E380531E2660EE910093EDA8 /* MockURLProtocol.swift */; };
+		E38053212660EEBB0093EDA8 /* MockEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38053202660EEBB0093EDA8 /* MockEndpoint.swift */; };
+		E38053232660EEDF0093EDA8 /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38053222660EEDF0093EDA8 /* NetworkServiceTests.swift */; };
+		E38053252660EFF00093EDA8 /* PostsWebServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38053242660EFF00093EDA8 /* PostsWebServiceTests.swift */; };
+		E38053272660F02A0093EDA8 /* XCTestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38053262660F02A0093EDA8 /* XCTestCase+Extensions.swift */; };
+		E38053292660F0900093EDA8 /* UserWebServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38053282660F0900093EDA8 /* UserWebServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		E38052CF2660E2200093EDA8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E38052B02660E21D0093EDA8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E38052B72660E21D0093EDA8;
-			remoteInfo = Blogs;
-		};
-		E38052DA2660E2200093EDA8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E38052B02660E21D0093EDA8 /* Project object */;
 			proxyType = 1;
@@ -60,9 +57,7 @@
 		E38052C72660E2200093EDA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E38052C92660E2200093EDA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E38052CE2660E2200093EDA8 /* BlogsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlogsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E38052D22660E2200093EDA8 /* BlogsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogsTests.swift; sourceTree = "<group>"; };
 		E38052D42660E2200093EDA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E38052D92660E2200093EDA8 /* BlogsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlogsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E38052DD2660E2210093EDA8 /* BlogsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogsUITests.swift; sourceTree = "<group>"; };
 		E38052DF2660E2210093EDA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E38052F62660E3ED0093EDA8 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
@@ -73,6 +68,12 @@
 		E38053122660EC7A0093EDA8 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E38053162660ECB60093EDA8 /* UserEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEndpoint.swift; sourceTree = "<group>"; };
 		E38053192660ECC40093EDA8 /* UserWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserWebService.swift; sourceTree = "<group>"; };
+		E380531E2660EE910093EDA8 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
+		E38053202660EEBB0093EDA8 /* MockEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockEndpoint.swift; sourceTree = "<group>"; };
+		E38053222660EEDF0093EDA8 /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
+		E38053242660EFF00093EDA8 /* PostsWebServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsWebServiceTests.swift; sourceTree = "<group>"; };
+		E38053262660F02A0093EDA8 /* XCTestCase+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Extensions.swift"; sourceTree = "<group>"; };
+		E38053282660F0900093EDA8 /* UserWebServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserWebServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,13 +85,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E38052CB2660E2200093EDA8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E38052D62660E2200093EDA8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -115,7 +109,6 @@
 			children = (
 				E38052B82660E21D0093EDA8 /* Blogs.app */,
 				E38052CE2660E2200093EDA8 /* BlogsTests.xctest */,
-				E38052D92660E2200093EDA8 /* BlogsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,8 +127,10 @@
 		E38052D12660E2200093EDA8 /* BlogsTests */ = {
 			isa = PBXGroup;
 			children = (
-				E38052EF2660E2A20093EDA8 /* TestCases */,
+				E380531C2660EE330093EDA8 /* Extensions */,
+				E380531D2660EE3D0093EDA8 /* Mocks */,
 				E38052F02660E2AD0093EDA8 /* SupportFiles */,
+				E38052EF2660E2A20093EDA8 /* TestCases */,
 			);
 			path = BlogsTests;
 			sourceTree = "<group>";
@@ -188,7 +183,9 @@
 		E38052EF2660E2A20093EDA8 /* TestCases */ = {
 			isa = PBXGroup;
 			children = (
-				E38052D22660E2200093EDA8 /* BlogsTests.swift */,
+				E38053222660EEDF0093EDA8 /* NetworkServiceTests.swift */,
+				E38053242660EFF00093EDA8 /* PostsWebServiceTests.swift */,
+				E38053282660F0900093EDA8 /* UserWebServiceTests.swift */,
 			);
 			path = TestCases;
 			sourceTree = "<group>";
@@ -280,6 +277,23 @@
 			path = UserWebService;
 			sourceTree = "<group>";
 		};
+		E380531C2660EE330093EDA8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E38053262660F02A0093EDA8 /* XCTestCase+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E380531D2660EE3D0093EDA8 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				E380531E2660EE910093EDA8 /* MockURLProtocol.swift */,
+				E38053202660EEBB0093EDA8 /* MockEndpoint.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -318,24 +332,6 @@
 			productReference = E38052CE2660E2200093EDA8 /* BlogsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		E38052D82660E2200093EDA8 /* BlogsUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E38052E82660E2210093EDA8 /* Build configuration list for PBXNativeTarget "BlogsUITests" */;
-			buildPhases = (
-				E38052D52660E2200093EDA8 /* Sources */,
-				E38052D62660E2200093EDA8 /* Frameworks */,
-				E38052D72660E2200093EDA8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E38052DB2660E2200093EDA8 /* PBXTargetDependency */,
-			);
-			name = BlogsUITests;
-			productName = BlogsUITests;
-			productReference = E38052D92660E2200093EDA8 /* BlogsUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -349,10 +345,6 @@
 						CreatedOnToolsVersion = 12.5;
 					};
 					E38052CD2660E2200093EDA8 = {
-						CreatedOnToolsVersion = 12.5;
-						TestTargetID = E38052B72660E21D0093EDA8;
-					};
-					E38052D82660E2200093EDA8 = {
 						CreatedOnToolsVersion = 12.5;
 						TestTargetID = E38052B72660E21D0093EDA8;
 					};
@@ -373,7 +365,6 @@
 			targets = (
 				E38052B72660E21D0093EDA8 /* Blogs */,
 				E38052CD2660E2200093EDA8 /* BlogsTests */,
-				E38052D82660E2200093EDA8 /* BlogsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -390,13 +381,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E38052CC2660E2200093EDA8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E38052D72660E2200093EDA8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -429,22 +413,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				E38053002660E7D80093EDA8 /* PostsEndpoint.swift in Sources */,
+				E38053232660EEDF0093EDA8 /* NetworkServiceTests.swift in Sources */,
 				E38052FB2660E6CC0093EDA8 /* NetworkLogger.swift in Sources */,
 				E38052F82660E3F00093EDA8 /* NetworkService.swift in Sources */,
 				E380530E2660EB040093EDA8 /* Post.swift in Sources */,
 				E38053032660E8AF0093EDA8 /* PostsWebService.swift in Sources */,
 				E380531B2660ECC40093EDA8 /* UserWebService.swift in Sources */,
+				E38053212660EEBB0093EDA8 /* MockEndpoint.swift in Sources */,
+				E38053272660F02A0093EDA8 /* XCTestCase+Extensions.swift in Sources */,
+				E38053252660EFF00093EDA8 /* PostsWebServiceTests.swift in Sources */,
 				E38053182660ECB60093EDA8 /* UserEndpoint.swift in Sources */,
-				E38052D32660E2200093EDA8 /* BlogsTests.swift in Sources */,
+				E380531F2660EE910093EDA8 /* MockURLProtocol.swift in Sources */,
 				E38053142660EC7A0093EDA8 /* User.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E38052D52660E2200093EDA8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E38052DE2660E2210093EDA8 /* BlogsUITests.swift in Sources */,
+				E38053292660F0900093EDA8 /* UserWebServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,11 +436,6 @@
 			isa = PBXTargetDependency;
 			target = E38052B72660E21D0093EDA8 /* Blogs */;
 			targetProxy = E38052CF2660E2200093EDA8 /* PBXContainerItemProxy */;
-		};
-		E38052DB2660E2200093EDA8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E38052B72660E21D0093EDA8 /* Blogs */;
-			targetProxy = E38052DA2660E2200093EDA8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -677,44 +653,6 @@
 			};
 			name = Release;
 		};
-		E38052E92660E2210093EDA8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = BlogsUITests/SupportFiles/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dh.BlogsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Blogs;
-			};
-			name = Debug;
-		};
-		E38052EA2660E2210093EDA8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = BlogsUITests/SupportFiles/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dh.BlogsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Blogs;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -741,15 +679,6 @@
 			buildConfigurations = (
 				E38052E62660E2210093EDA8 /* Debug */,
 				E38052E72660E2210093EDA8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E38052E82660E2210093EDA8 /* Build configuration list for PBXNativeTarget "BlogsUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E38052E92660E2210093EDA8 /* Debug */,
-				E38052EA2660E2210093EDA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
