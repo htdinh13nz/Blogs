@@ -103,6 +103,102 @@
             </objects>
             <point key="canvasLocation" x="1021.7391304347827" y="37.5"/>
         </scene>
+        <!--Post Details-->
+        <scene sceneID="V2C-Yt-OOr">
+            <objects>
+                <viewController storyboardIdentifier="PostDetailsVC" title="Post Details" id="xOS-Og-FFZ" customClass="PostDetailsVC" customModule="Blogs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dGa-Cf-fen">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="45G-o1-h4U" userLabel="UserView">
+                                <rect key="frame" x="16" y="60" width="382" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zd5-qL-ffK">
+                                        <rect key="frame" x="78" y="20" width="294" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AvataPlaceHolder" translatesAutoresizingMaskIntoConstraints="NO" id="JnC-rh-ak8">
+                                        <rect key="frame" x="10" y="20" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="KdW-Bf-0w3"/>
+                                            <constraint firstAttribute="height" constant="60" id="ZnC-Ly-RUV"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="reG-am-UDb">
+                                        <rect key="frame" x="78" y="44.5" width="294" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Zd5-qL-ffK" secondAttribute="trailing" constant="10" id="6nH-jm-IZO"/>
+                                    <constraint firstAttribute="trailing" secondItem="reG-am-UDb" secondAttribute="trailing" constant="10" id="B3m-Zf-5Fu"/>
+                                    <constraint firstItem="reG-am-UDb" firstAttribute="firstBaseline" secondItem="Zd5-qL-ffK" secondAttribute="baseline" constant="20" symbolType="layoutAnchor" id="EaO-wX-VZl"/>
+                                    <constraint firstItem="Zd5-qL-ffK" firstAttribute="leading" secondItem="JnC-rh-ak8" secondAttribute="trailing" constant="8" symbolic="YES" id="JPz-f3-wzj"/>
+                                    <constraint firstItem="reG-am-UDb" firstAttribute="leading" secondItem="JnC-rh-ak8" secondAttribute="trailing" constant="8" symbolic="YES" id="MFs-Ol-NYY"/>
+                                    <constraint firstItem="Zd5-qL-ffK" firstAttribute="top" secondItem="JnC-rh-ak8" secondAttribute="top" id="QhP-0w-PpF"/>
+                                    <constraint firstItem="JnC-rh-ak8" firstAttribute="leading" secondItem="45G-o1-h4U" secondAttribute="leading" constant="10" id="VDj-pk-ZII"/>
+                                    <constraint firstAttribute="height" constant="100" id="dOH-0f-MDn"/>
+                                    <constraint firstItem="JnC-rh-ak8" firstAttribute="centerY" secondItem="45G-o1-h4U" secondAttribute="centerY" id="fbG-rr-x1D"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h6a-yV-Ff5" userLabel="PostView">
+                                <rect key="frame" x="16" y="168" width="382" height="159.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="ea molestias quasi exercitationem repellat qui ipsa sit aut" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zcd-oo-d6K">
+                                        <rect key="frame" x="10" y="10" width="362" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x80-Mh-oMJ">
+                                        <rect key="frame" x="10" y="68" width="362" height="81.5"/>
+                                        <string key="text">et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut</string>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="x80-Mh-oMJ" firstAttribute="top" secondItem="Zcd-oo-d6K" secondAttribute="bottom" constant="10" id="9ag-lf-bLf"/>
+                                    <constraint firstAttribute="trailing" secondItem="Zcd-oo-d6K" secondAttribute="trailing" constant="10" id="Icw-UM-2OD"/>
+                                    <constraint firstItem="Zcd-oo-d6K" firstAttribute="leading" secondItem="h6a-yV-Ff5" secondAttribute="leading" constant="10" id="JpO-A9-Sl9"/>
+                                    <constraint firstItem="x80-Mh-oMJ" firstAttribute="leading" secondItem="h6a-yV-Ff5" secondAttribute="leading" constant="10" id="bGg-NA-kLM"/>
+                                    <constraint firstAttribute="bottom" secondItem="x80-Mh-oMJ" secondAttribute="bottom" constant="10" id="hyF-Ro-kir"/>
+                                    <constraint firstAttribute="trailing" secondItem="x80-Mh-oMJ" secondAttribute="trailing" constant="10" id="rD7-Dt-04T"/>
+                                    <constraint firstItem="Zcd-oo-d6K" firstAttribute="top" secondItem="h6a-yV-Ff5" secondAttribute="top" constant="10" id="wqO-UQ-20Q"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nPY-7m-raL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="h6a-yV-Ff5" firstAttribute="top" secondItem="45G-o1-h4U" secondAttribute="bottom" constant="8" id="CUG-fe-AMh"/>
+                            <constraint firstItem="nPY-7m-raL" firstAttribute="trailing" secondItem="45G-o1-h4U" secondAttribute="trailing" constant="16" id="Ngm-cf-tyE"/>
+                            <constraint firstItem="45G-o1-h4U" firstAttribute="top" secondItem="nPY-7m-raL" secondAttribute="top" constant="16" id="NvW-gj-Eei"/>
+                            <constraint firstItem="h6a-yV-Ff5" firstAttribute="leading" secondItem="nPY-7m-raL" secondAttribute="leading" constant="16" id="VRq-ki-biY"/>
+                            <constraint firstItem="45G-o1-h4U" firstAttribute="leading" secondItem="nPY-7m-raL" secondAttribute="leading" constant="16" id="hOc-ue-AUm"/>
+                            <constraint firstItem="nPY-7m-raL" firstAttribute="trailing" secondItem="h6a-yV-Ff5" secondAttribute="trailing" constant="16" id="mbI-JZ-4s1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="avataImageView" destination="JnC-rh-ak8" id="gGF-pd-T8X"/>
+                        <outlet property="postBodyLabel" destination="x80-Mh-oMJ" id="ryn-mm-gNh"/>
+                        <outlet property="postTitleLabel" destination="Zcd-oo-d6K" id="afz-z0-PSK"/>
+                        <outlet property="userEmailLabel" destination="reG-am-UDb" id="She-av-WeY"/>
+                        <outlet property="userNameLabel" destination="Zd5-qL-ffK" id="78n-ok-kd1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MOy-cd-mdv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1673" y="49"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="bEI-OZ-3QN">
             <objects>
@@ -123,6 +219,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="AvataPlaceHolder" width="112.5" height="112.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -53,6 +53,10 @@
 		E38053492660F7380093EDA8 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38053462660F7380093EDA8 /* UIView+Extensions.swift */; };
 		E380534A2660F7380093EDA8 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38053472660F7380093EDA8 /* UIViewController+Extension.swift */; };
 		E380534B2660F7380093EDA8 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38053472660F7380093EDA8 /* UIViewController+Extension.swift */; };
+		E380534D2660F90A0093EDA8 /* PostDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E380534C2660F90A0093EDA8 /* PostDetailsVC.swift */; };
+		E380534E2660F90A0093EDA8 /* PostDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E380534C2660F90A0093EDA8 /* PostDetailsVC.swift */; };
+		E38053502660FAC30093EDA8 /* PostDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E380534F2660FAC30093EDA8 /* PostDetailsViewModel.swift */; };
+		E38053512660FAC30093EDA8 /* PostDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E380534F2660FAC30093EDA8 /* PostDetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +105,8 @@
 		E38053422660F6FE0093EDA8 /* PostCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCellViewModel.swift; sourceTree = "<group>"; };
 		E38053462660F7380093EDA8 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		E38053472660F7380093EDA8 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		E380534C2660F90A0093EDA8 /* PostDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsVC.swift; sourceTree = "<group>"; };
+		E380534F2660FAC30093EDA8 /* PostDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,6 +272,7 @@
 			isa = PBXGroup;
 			children = (
 				E38052BF2660E21D0093EDA8 /* ListPostsVC.swift */,
+				E380534C2660F90A0093EDA8 /* PostDetailsVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -328,6 +335,7 @@
 			children = (
 				E380532E2660F5CB0093EDA8 /* ListPostsViewModel.swift */,
 				E38053422660F6FE0093EDA8 /* PostCellViewModel.swift */,
+				E380534F2660FAC30093EDA8 /* PostDetailsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -499,6 +507,7 @@
 				E38052FF2660E7D80093EDA8 /* PostsEndpoint.swift in Sources */,
 				E38053482660F7380093EDA8 /* UIView+Extensions.swift in Sources */,
 				E380533C2660F6BF0093EDA8 /* RetryTableViewCell.swift in Sources */,
+				E38053502660FAC30093EDA8 /* PostDetailsViewModel.swift in Sources */,
 				E38052BC2660E21D0093EDA8 /* AppDelegate.swift in Sources */,
 				E38052F72660E3ED0093EDA8 /* NetworkService.swift in Sources */,
 				E380532C2660F5B10093EDA8 /* MultipleBindingValue.swift in Sources */,
@@ -508,6 +517,7 @@
 				E38052BE2660E21D0093EDA8 /* SceneDelegate.swift in Sources */,
 				E380531A2660ECC40093EDA8 /* UserWebService.swift in Sources */,
 				E380530D2660EB040093EDA8 /* Post.swift in Sources */,
+				E380534D2660F90A0093EDA8 /* PostDetailsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,10 +542,12 @@
 				E380531F2660EE910093EDA8 /* MockURLProtocol.swift in Sources */,
 				E38053442660F6FE0093EDA8 /* PostCellViewModel.swift in Sources */,
 				E38053142660EC7A0093EDA8 /* User.swift in Sources */,
+				E38053512660FAC30093EDA8 /* PostDetailsViewModel.swift in Sources */,
 				E38053292660F0900093EDA8 /* UserWebServiceTests.swift in Sources */,
 				E380534B2660F7380093EDA8 /* UIViewController+Extension.swift in Sources */,
 				E380532D2660F5B10093EDA8 /* MultipleBindingValue.swift in Sources */,
 				E380533F2660F6BF0093EDA8 /* PostTableViewCell.swift in Sources */,
+				E380534E2660F90A0093EDA8 /* PostDetailsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

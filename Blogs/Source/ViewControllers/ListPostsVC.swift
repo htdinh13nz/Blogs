@@ -133,6 +133,11 @@ extension ListPostsVC: UITableViewDataSource {
 //MARK: - UITableViewDelegate Implementations
 extension ListPostsVC: UITableViewDelegate {
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    //TODO: NEED IMPLEMENT
+    guard let dataSource = viewModel.posts.value else { return }
+    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+    guard let postDetailsVC = storyboard.instantiateViewController(identifier: "PostDetailsVC") as? PostDetailsVC else { return}
+    
+    postDetailsVC.viewModel.post.value = dataSource[indexPath.row]
+    navigationController?.pushViewController(postDetailsVC, animated: true)
   }
 }
