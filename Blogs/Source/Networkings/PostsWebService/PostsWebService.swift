@@ -31,7 +31,6 @@ struct PostsWebService {
     }
   }
   
-  
   func handlePostsResponse(_ res: HTTPURLResponse) -> Result<String> {
     switch res.statusCode {
     case 200...299: return .success

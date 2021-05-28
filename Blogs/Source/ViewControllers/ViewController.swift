@@ -17,6 +17,11 @@ class ViewController: UIViewController {
       guard let `posts` = posts else { return }
       print(posts)
     }
+    
+    let userWebService = UserWebService()
+    userWebService.getUser(1) { user, err in
+      print(user)
+    }
   }
   
   

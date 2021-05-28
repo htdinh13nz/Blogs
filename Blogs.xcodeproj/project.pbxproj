@@ -25,6 +25,12 @@
 		E38053032660E8AF0093EDA8 /* PostsWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38053012660E8AF0093EDA8 /* PostsWebService.swift */; };
 		E380530D2660EB040093EDA8 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E380530C2660EB040093EDA8 /* Post.swift */; };
 		E380530E2660EB040093EDA8 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E380530C2660EB040093EDA8 /* Post.swift */; };
+		E38053132660EC7A0093EDA8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38053122660EC7A0093EDA8 /* User.swift */; };
+		E38053142660EC7A0093EDA8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38053122660EC7A0093EDA8 /* User.swift */; };
+		E38053172660ECB60093EDA8 /* UserEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38053162660ECB60093EDA8 /* UserEndpoint.swift */; };
+		E38053182660ECB60093EDA8 /* UserEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38053162660ECB60093EDA8 /* UserEndpoint.swift */; };
+		E380531A2660ECC40093EDA8 /* UserWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38053192660ECC40093EDA8 /* UserWebService.swift */; };
+		E380531B2660ECC40093EDA8 /* UserWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38053192660ECC40093EDA8 /* UserWebService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +70,9 @@
 		E38052FE2660E7D80093EDA8 /* PostsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsEndpoint.swift; sourceTree = "<group>"; };
 		E38053012660E8AF0093EDA8 /* PostsWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsWebService.swift; sourceTree = "<group>"; };
 		E380530C2660EB040093EDA8 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		E38053122660EC7A0093EDA8 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E38053162660ECB60093EDA8 /* UserEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEndpoint.swift; sourceTree = "<group>"; };
+		E38053192660ECC40093EDA8 /* UserWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserWebService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +220,7 @@
 		E38052F32660E3870093EDA8 /* Networkings */ = {
 			isa = PBXGroup;
 			children = (
+				E38053152660ECA30093EDA8 /* UserWebService */,
 				E38052FD2660E7BF0093EDA8 /* PostsWebService */,
 				E38052FC2660E7B30093EDA8 /* BaseSetup */,
 			);
@@ -256,8 +266,18 @@
 			isa = PBXGroup;
 			children = (
 				E380530C2660EB040093EDA8 /* Post.swift */,
+				E38053122660EC7A0093EDA8 /* User.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		E38053152660ECA30093EDA8 /* UserWebService */ = {
+			isa = PBXGroup;
+			children = (
+				E38053162660ECB60093EDA8 /* UserEndpoint.swift */,
+				E38053192660ECC40093EDA8 /* UserWebService.swift */,
+			);
+			path = UserWebService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -395,8 +415,11 @@
 				E38052FF2660E7D80093EDA8 /* PostsEndpoint.swift in Sources */,
 				E38052BC2660E21D0093EDA8 /* AppDelegate.swift in Sources */,
 				E38052F72660E3ED0093EDA8 /* NetworkService.swift in Sources */,
+				E38053172660ECB60093EDA8 /* UserEndpoint.swift in Sources */,
+				E38053132660EC7A0093EDA8 /* User.swift in Sources */,
 				E38053022660E8AF0093EDA8 /* PostsWebService.swift in Sources */,
 				E38052BE2660E21D0093EDA8 /* SceneDelegate.swift in Sources */,
+				E380531A2660ECC40093EDA8 /* UserWebService.swift in Sources */,
 				E380530D2660EB040093EDA8 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,7 +433,10 @@
 				E38052F82660E3F00093EDA8 /* NetworkService.swift in Sources */,
 				E380530E2660EB040093EDA8 /* Post.swift in Sources */,
 				E38053032660E8AF0093EDA8 /* PostsWebService.swift in Sources */,
+				E380531B2660ECC40093EDA8 /* UserWebService.swift in Sources */,
+				E38053182660ECB60093EDA8 /* UserEndpoint.swift in Sources */,
 				E38052D32660E2200093EDA8 /* BlogsTests.swift in Sources */,
+				E38053142660EC7A0093EDA8 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
