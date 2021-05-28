@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		E38052BC2660E21D0093EDA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38052BB2660E21D0093EDA8 /* AppDelegate.swift */; };
 		E38052BE2660E21D0093EDA8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38052BD2660E21D0093EDA8 /* SceneDelegate.swift */; };
-		E38052C02660E21D0093EDA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38052BF2660E21D0093EDA8 /* ViewController.swift */; };
+		E38052C02660E21D0093EDA8 /* ListPostsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38052BF2660E21D0093EDA8 /* ListPostsVC.swift */; };
 		E38052C32660E21D0093EDA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E38052C12660E21D0093EDA8 /* Main.storyboard */; };
 		E38052C52660E2200093EDA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E38052C42660E2200093EDA8 /* Assets.xcassets */; };
 		E38052C82660E2200093EDA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E38052C62660E2200093EDA8 /* LaunchScreen.storyboard */; };
@@ -35,6 +35,24 @@
 		E38053252660EFF00093EDA8 /* PostsWebServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38053242660EFF00093EDA8 /* PostsWebServiceTests.swift */; };
 		E38053272660F02A0093EDA8 /* XCTestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38053262660F02A0093EDA8 /* XCTestCase+Extensions.swift */; };
 		E38053292660F0900093EDA8 /* UserWebServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38053282660F0900093EDA8 /* UserWebServiceTests.swift */; };
+		E380532C2660F5B10093EDA8 /* MultipleBindingValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E380532B2660F5B10093EDA8 /* MultipleBindingValue.swift */; };
+		E380532D2660F5B10093EDA8 /* MultipleBindingValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E380532B2660F5B10093EDA8 /* MultipleBindingValue.swift */; };
+		E380532F2660F5CB0093EDA8 /* ListPostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E380532E2660F5CB0093EDA8 /* ListPostsViewModel.swift */; };
+		E38053302660F5CB0093EDA8 /* ListPostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E380532E2660F5CB0093EDA8 /* ListPostsViewModel.swift */; };
+		E380533A2660F6BF0093EDA8 /* RetryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E38053352660F6BF0093EDA8 /* RetryTableViewCell.xib */; };
+		E380533B2660F6BF0093EDA8 /* RetryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E38053352660F6BF0093EDA8 /* RetryTableViewCell.xib */; };
+		E380533C2660F6BF0093EDA8 /* RetryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38053362660F6BF0093EDA8 /* RetryTableViewCell.swift */; };
+		E380533D2660F6BF0093EDA8 /* RetryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38053362660F6BF0093EDA8 /* RetryTableViewCell.swift */; };
+		E380533E2660F6BF0093EDA8 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38053382660F6BF0093EDA8 /* PostTableViewCell.swift */; };
+		E380533F2660F6BF0093EDA8 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38053382660F6BF0093EDA8 /* PostTableViewCell.swift */; };
+		E38053402660F6BF0093EDA8 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E38053392660F6BF0093EDA8 /* PostTableViewCell.xib */; };
+		E38053412660F6BF0093EDA8 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E38053392660F6BF0093EDA8 /* PostTableViewCell.xib */; };
+		E38053432660F6FE0093EDA8 /* PostCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38053422660F6FE0093EDA8 /* PostCellViewModel.swift */; };
+		E38053442660F6FE0093EDA8 /* PostCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38053422660F6FE0093EDA8 /* PostCellViewModel.swift */; };
+		E38053482660F7380093EDA8 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38053462660F7380093EDA8 /* UIView+Extensions.swift */; };
+		E38053492660F7380093EDA8 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38053462660F7380093EDA8 /* UIView+Extensions.swift */; };
+		E380534A2660F7380093EDA8 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38053472660F7380093EDA8 /* UIViewController+Extension.swift */; };
+		E380534B2660F7380093EDA8 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38053472660F7380093EDA8 /* UIViewController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +69,7 @@
 		E38052B82660E21D0093EDA8 /* Blogs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blogs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E38052BB2660E21D0093EDA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E38052BD2660E21D0093EDA8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E38052BF2660E21D0093EDA8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E38052BF2660E21D0093EDA8 /* ListPostsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPostsVC.swift; sourceTree = "<group>"; };
 		E38052C22660E21D0093EDA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E38052C42660E2200093EDA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E38052C72660E2200093EDA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -74,6 +92,15 @@
 		E38053242660EFF00093EDA8 /* PostsWebServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsWebServiceTests.swift; sourceTree = "<group>"; };
 		E38053262660F02A0093EDA8 /* XCTestCase+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Extensions.swift"; sourceTree = "<group>"; };
 		E38053282660F0900093EDA8 /* UserWebServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserWebServiceTests.swift; sourceTree = "<group>"; };
+		E380532B2660F5B10093EDA8 /* MultipleBindingValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleBindingValue.swift; sourceTree = "<group>"; };
+		E380532E2660F5CB0093EDA8 /* ListPostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPostsViewModel.swift; sourceTree = "<group>"; };
+		E38053352660F6BF0093EDA8 /* RetryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RetryTableViewCell.xib; sourceTree = "<group>"; };
+		E38053362660F6BF0093EDA8 /* RetryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RetryTableViewCell.swift; sourceTree = "<group>"; };
+		E38053382660F6BF0093EDA8 /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		E38053392660F6BF0093EDA8 /* PostTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		E38053422660F6FE0093EDA8 /* PostCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCellViewModel.swift; sourceTree = "<group>"; };
+		E38053462660F7380093EDA8 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		E38053472660F7380093EDA8 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,10 +174,12 @@
 		E38052EB2660E25D0093EDA8 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				E38053312660F5E30093EDA8 /* Core */,
 				E38052F42660E3C70093EDA8 /* Delegates */,
 				E380530B2660EAEA0093EDA8 /* Models */,
-				E38052F32660E3870093EDA8 /* Networkings */,
 				E38052F52660E3D50093EDA8 /* ViewControllers */,
+				E380532A2660F58B0093EDA8 /* ViewModels */,
+				E38053332660F6980093EDA8 /* Views */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -236,7 +265,7 @@
 		E38052F52660E3D50093EDA8 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				E38052BF2660E21D0093EDA8 /* ViewController.swift */,
+				E38052BF2660E21D0093EDA8 /* ListPostsVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -292,6 +321,69 @@
 				E38053202660EEBB0093EDA8 /* MockEndpoint.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		E380532A2660F58B0093EDA8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E380532E2660F5CB0093EDA8 /* ListPostsViewModel.swift */,
+				E38053422660F6FE0093EDA8 /* PostCellViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E38053312660F5E30093EDA8 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E38053452660F7290093EDA8 /* Extensions */,
+				E38053322660F5FF0093EDA8 /* BindingValues */,
+				E38052F32660E3870093EDA8 /* Networkings */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		E38053322660F5FF0093EDA8 /* BindingValues */ = {
+			isa = PBXGroup;
+			children = (
+				E380532B2660F5B10093EDA8 /* MultipleBindingValue.swift */,
+			);
+			path = BindingValues;
+			sourceTree = "<group>";
+		};
+		E38053332660F6980093EDA8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E38053372660F6BF0093EDA8 /* PostTableViewCell */,
+				E38053342660F6BF0093EDA8 /* RetryTableViewCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E38053342660F6BF0093EDA8 /* RetryTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E38053362660F6BF0093EDA8 /* RetryTableViewCell.swift */,
+				E38053352660F6BF0093EDA8 /* RetryTableViewCell.xib */,
+			);
+			path = RetryTableViewCell;
+			sourceTree = "<group>";
+		};
+		E38053372660F6BF0093EDA8 /* PostTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E38053382660F6BF0093EDA8 /* PostTableViewCell.swift */,
+				E38053392660F6BF0093EDA8 /* PostTableViewCell.xib */,
+			);
+			path = PostTableViewCell;
+			sourceTree = "<group>";
+		};
+		E38053452660F7290093EDA8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E38053462660F7380093EDA8 /* UIView+Extensions.swift */,
+				E38053472660F7380093EDA8 /* UIViewController+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -374,6 +466,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E380533A2660F6BF0093EDA8 /* RetryTableViewCell.xib in Resources */,
+				E38053402660F6BF0093EDA8 /* PostTableViewCell.xib in Resources */,
 				E38052C82660E2200093EDA8 /* LaunchScreen.storyboard in Resources */,
 				E38052C52660E2200093EDA8 /* Assets.xcassets in Resources */,
 				E38052C32660E21D0093EDA8 /* Main.storyboard in Resources */,
@@ -384,6 +478,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E380533B2660F6BF0093EDA8 /* RetryTableViewCell.xib in Resources */,
+				E38053412660F6BF0093EDA8 /* PostTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,11 +490,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E380534A2660F7380093EDA8 /* UIViewController+Extension.swift in Sources */,
+				E380532F2660F5CB0093EDA8 /* ListPostsViewModel.swift in Sources */,
 				E38052FA2660E6CC0093EDA8 /* NetworkLogger.swift in Sources */,
-				E38052C02660E21D0093EDA8 /* ViewController.swift in Sources */,
+				E380533E2660F6BF0093EDA8 /* PostTableViewCell.swift in Sources */,
+				E38052C02660E21D0093EDA8 /* ListPostsVC.swift in Sources */,
+				E38053432660F6FE0093EDA8 /* PostCellViewModel.swift in Sources */,
 				E38052FF2660E7D80093EDA8 /* PostsEndpoint.swift in Sources */,
+				E38053482660F7380093EDA8 /* UIView+Extensions.swift in Sources */,
+				E380533C2660F6BF0093EDA8 /* RetryTableViewCell.swift in Sources */,
 				E38052BC2660E21D0093EDA8 /* AppDelegate.swift in Sources */,
 				E38052F72660E3ED0093EDA8 /* NetworkService.swift in Sources */,
+				E380532C2660F5B10093EDA8 /* MultipleBindingValue.swift in Sources */,
 				E38053172660ECB60093EDA8 /* UserEndpoint.swift in Sources */,
 				E38053132660EC7A0093EDA8 /* User.swift in Sources */,
 				E38053022660E8AF0093EDA8 /* PostsWebService.swift in Sources */,
@@ -412,10 +515,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E380533D2660F6BF0093EDA8 /* RetryTableViewCell.swift in Sources */,
 				E38053002660E7D80093EDA8 /* PostsEndpoint.swift in Sources */,
+				E38053492660F7380093EDA8 /* UIView+Extensions.swift in Sources */,
 				E38053232660EEDF0093EDA8 /* NetworkServiceTests.swift in Sources */,
 				E38052FB2660E6CC0093EDA8 /* NetworkLogger.swift in Sources */,
 				E38052F82660E3F00093EDA8 /* NetworkService.swift in Sources */,
+				E38053302660F5CB0093EDA8 /* ListPostsViewModel.swift in Sources */,
 				E380530E2660EB040093EDA8 /* Post.swift in Sources */,
 				E38053032660E8AF0093EDA8 /* PostsWebService.swift in Sources */,
 				E380531B2660ECC40093EDA8 /* UserWebService.swift in Sources */,
@@ -424,8 +530,12 @@
 				E38053252660EFF00093EDA8 /* PostsWebServiceTests.swift in Sources */,
 				E38053182660ECB60093EDA8 /* UserEndpoint.swift in Sources */,
 				E380531F2660EE910093EDA8 /* MockURLProtocol.swift in Sources */,
+				E38053442660F6FE0093EDA8 /* PostCellViewModel.swift in Sources */,
 				E38053142660EC7A0093EDA8 /* User.swift in Sources */,
 				E38053292660F0900093EDA8 /* UserWebServiceTests.swift in Sources */,
+				E380534B2660F7380093EDA8 /* UIViewController+Extension.swift in Sources */,
+				E380532D2660F5B10093EDA8 /* MultipleBindingValue.swift in Sources */,
+				E380533F2660F6BF0093EDA8 /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
